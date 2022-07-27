@@ -123,12 +123,13 @@
         </script>
 
         <script type="module">
-            import {customAlert, customConfirm, customPrompt} from './customdialog.js';
+            import * as Custom from './customdialog.js';
             
             /*create object */
-            var alertObject = new customAlert();
-            var confirmObject = new customConfirm(); 
-            var promptObject = new customPrompt();
+            var alertObject = new Custom.customAlert();
+            var confirmObject = new Custom.customConfirm(); 
+            var promptObject = new Custom.customPrompt();
+            
             
         </script>
         
