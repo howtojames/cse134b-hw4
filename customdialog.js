@@ -1,4 +1,4 @@
-function customAlert(){
+export function customAlert(){
     this.dialogBox = function (message){
         var backgroundcolor = document.getElementById("background");
         var dialog = document.getElementById("box");
@@ -18,7 +18,7 @@ function customAlert(){
     }
 }
 
-function customConfirm(){
+export function customConfirm(){
 
     this.dialogBox2 = function (message3){
         var backgroundcolor = document.getElementById("background2");
@@ -53,8 +53,7 @@ function customConfirm(){
     }
 }
 
-
-     function customPrompt(){
+export function customPrompt(){
 
     this.dialogBox3 = function (message3){
         var backgroundcolor = document.getElementById("background3");
@@ -98,3 +97,4 @@ function customConfirm(){
             rValue2.innerHTML =`Welcome ${cleanedInput}!`;
     }
 }
+
