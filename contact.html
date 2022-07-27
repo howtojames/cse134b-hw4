@@ -4,8 +4,15 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <title>James' HTML Site</title>
-        <!--styles.css to be added later-->
+        
         <link rel="stylesheet" href="style.css">
+
+        <script type="module">
+            /*import everything marked as export into customDialog bundle*/
+            import * as customDialog from './customdialog.js'
+
+            customDialog.defineCustomElements();
+        </script>
 
     <style>
         tabel, th, td, tr{
@@ -48,7 +55,7 @@
         
 
         <p class="twocontact">More Information will be upated later with JS
-        <template>
+        <template id="info-template">
             <p>More information can be hidden and revealed using template with JS.</p>
         </template> 
         </p>
