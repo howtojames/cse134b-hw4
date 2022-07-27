@@ -1,4 +1,4 @@
-export function customAlert(){
+function customAlert(){
     this.dialogBox = function (message){
         var backgroundcolor = document.getElementById("background");
         var dialog = document.getElementById("box");
@@ -18,7 +18,7 @@ export function customAlert(){
     }
 }
 
-export function customConfirm(){
+function customConfirm(){
 
     this.dialogBox2 = function (message3){
         var backgroundcolor = document.getElementById("background2");
@@ -54,7 +54,7 @@ export function customConfirm(){
 }
 
 
-export function customPrompt(){
+     function customPrompt(){
 
     this.dialogBox3 = function (message3){
         var backgroundcolor = document.getElementById("background3");
@@ -87,12 +87,14 @@ export function customPrompt(){
         /*get value only when you click ok*/
         var pInput = document.getElementById("promptInput");
         var pInputValue = pInput.value;
+        const cleanedInput = DOMPurify.sanitize(pInputValue);
 
         var rValue2 = document.getElementById("promptReturnValue");
+       
 
         if(pInputValue == "")
             rValue2.innerHTML = `User didn't enter anything`;
         else
-            rValue2.innerHTML =`Welcome ${pInputValue}!`;
+            rValue2.innerHTML =`Welcome ${cleanedInput}!`;
     }
 }

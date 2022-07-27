@@ -119,11 +119,12 @@
             </dialog>
         </dialog>
         
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.10/purify.min.js">
+        </script>
 
-
-        <script type="module">
+        <script>
             import {customAlert, customConfirm, customPrompt} from './customdialog.js';
-
+            
             /*create object */
             var alertObject = new customAlert();
             var confirmObject = new customConfirm(); 
