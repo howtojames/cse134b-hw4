@@ -1,41 +1,24 @@
-
 /**
  * @typedef {{
- * name: string,
- * email: string,
- * school email: string,
- * PID: string,
- * Graduation Year: string
- * }} Info
- * 
- * 
+ *  title: string,
+ *  date: string,
+ *  comments: string
+ * }} Blog
  */
 
-export const exampleInfo = {
-    "name":"James Ruan",
-    "email":"jrjamesruan@gmail.com",
-    "school email": "jruan@ucsd.edu",
-    "PID": A15730167,
-    "Graduation Year": "2022"
-}
 
-
-export function generateInfoId(){
+export function generateBlogId() {
     return crypto.randomUUID();
-}
+};
 
 /**
- * define types of the parameter and return
- * @param {string} [infoId] 
- * @param {Info} [info] 
- * @return {HTMLElement}
+ * 
+ * @param {Blog} [blog]
  */
-export function renderInfo(infoId, info) {
-    const template = document.getElementById("info-template");
-    
-    const infoElement = templete.content.cloneNode(true);
-    console.log(infoElement.children[0]);
-
-    
+export function renderBlog(blogId, book) {
+    return 1;
 }
+
+
+
 

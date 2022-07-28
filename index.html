@@ -5,14 +5,15 @@
         <title>James' HTML Site</title>
         <link rel="stylesheet" href="style.css">
 
-        <script type="module" src="customdialog.js"></script>
+        
          
     </head>
 
     <body>
+        
         <header> 
-            <h1> 
-                <a href="index.html">
+            <h1 class="abovenav"> 
+                <a href="index.html" height="80">
                     <img src="logo.png" width="50" height="50" alt="This image is the logo of the website."> 
                     James' Portfolio 
                 </a>
@@ -32,6 +33,7 @@
         </header>
         
         <main>
+
         <!--header for the navigation bar-->
         <section class="onehome">
             <h2>Welcome to my website!</h2>
@@ -101,17 +103,27 @@
 
         <section class="fivehome">
         <!--button is inline-->
-        <button type="Button" class="five">
-            This button does nothing.
+        <button type="button" class="five" id="updatedbutton">
+            What does this button do?
         </button>
         </section>  
 
         </main>
 
-        <footer>
-            <h6>&copy; James Inc. 2022</h6>
+        <footer class="bottom">
+            <span>&copy; James Inc. 2022</span>
+            <span>&copy; Last Updated on July 27, 2022</span>
+
         </footer>
     </body>
+
+    <script>
+        var nothingButton = document.getElementById("updatedbutton");
+        nothingButton.addEventListener("click", () => {
+            window.alert("welcome to the site!");
+        }); 
+
+    </script>
 
 </html>
 

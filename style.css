@@ -16,6 +16,13 @@ html{
     height:100%;
 }
 
+.abovenav{
+    background-image: url("cubes.png");
+    height: 100%;
+    width:100%;
+}
+
+
 
 
 
@@ -28,6 +35,8 @@ main {
     grid-auto-rows: minmax(100px, auto);    
     overflow-x:auto;
     padding: 0.5em;
+
+    background-image: url("whiteback.jpg");
 }
 
 /*homepage grid*/
@@ -268,4 +277,10 @@ body div{
     100% {transform: rotate(1turn)}
 }
 
+
+.bottom { 
+    font-size: 12px !important;
+      
+
+}
 
